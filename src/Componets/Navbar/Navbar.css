@@ -1,0 +1,83 @@
+
+  
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: flex-end; /* Align items to the right */
+    height: 0; /* Hide the menu by default */
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+
+  .navbar.open .navbar-nav {
+    height: auto; /* Display the menu */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar.open .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff; /* Text color for the links */
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722; /* Text color on hover */
+  }
+
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px; /* Increase the padding to make space for the icon */
+    display: flex;
+    justify-content: space-between; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .burger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Show the burger icon when the navbar is in "open" state */
+  .navbar.open .burger-icon {
+    display: block;
+  }
+  
+  /* Rotate and animate the bars to create an "X" shape for the close button */
+  .navbar.open .burger-icon .bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .navbar.open .burger-icon .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar.open .burger-icon .bar:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
