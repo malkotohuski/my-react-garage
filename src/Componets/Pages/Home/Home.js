@@ -4,7 +4,7 @@ import './Home.css';
 const images = [
   'https://wieck-nissanao-production.s3.amazonaws.com/photos/50ec55516d7fa6d3b43dcf4dd2b8e6183a4abc04/preview-928x522.jpg', // Replace with the URLs or paths to your images
   'https://hips.hearstapps.com/hmg-prod/images/2021-porsche-911-turbo-s-pdk-130-edit-1608061336.jpg?crop=0.622xw:0.466xh;0.376xw,0.500xh&resize=1200:*',
-  'https://hobbyland.bg/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/-/1-43-bmw-m5-competition-red-01.jpg',
+  'https://media.istockphoto.com/id/488467276/photo/man-calling-for-help.jpg?s=2048x2048&w=is&k=20&c=vzvZm9_SMI0CHJTpWfu_j4cgbgFytbVtphMrZxh3rCQ='
 ];
 
 function HomePage() {
@@ -13,7 +13,7 @@ function HomePage() {
   useEffect(() => {
     const changeImageInterval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => {
       clearInterval(changeImageInterval);
@@ -31,6 +31,7 @@ function HomePage() {
         <p>This is the home page of my React application.</p>
         <div className='header-search'>
           <input 
+          className='search-field'
           type='text'
           placeholder='search here'
           />
