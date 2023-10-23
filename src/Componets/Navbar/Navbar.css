@@ -1,9 +1,7 @@
 .header-wrapper{
-  width: 1262px;
+  width: 100%;
   margin: 0 auto;
   height: 156px;
- 
-
 }
 
 .span.link[url] {
