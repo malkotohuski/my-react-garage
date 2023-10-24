@@ -52,4 +52,52 @@
     margin-left: 2px;
     border-radius: 3px;
   }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Set the background color as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: center; /* Center the content horizontally */
+  }
+
+   .foooter_social{
+    background-color: #132530;
+    position: relative;
+    padding: 56px 32px 56px 16px;
+    display: flex;
+    border-bottom: 1px solid #2c3d46;
+    font-family: 'ProximaNova-Semibold';
+}
   
+.footer_social-text{
+  width: 300px;
+    margin-right: 16px;
+    margin-top: 32px;
+}
+
+.text{
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+}
+
+.footer__social-block {
+  width: 278px;
+  margin-right: 32px;
+}
+
+.footer__social-block .social-image {
+  text-align: right;
+  margin-bottom: 8px;
+  min-height: 29px;
+}
+
+.footer__social-block .social-image img {
+  display: inline-block;
+  max-height: 24px;
+}

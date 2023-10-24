@@ -27,8 +27,8 @@ function HomePage() {
         {/* Left Ad Content */}
       </div>
       <div className="content">
-        <h1>Welcome to AUTOCAR</h1>
-        <p>This is the home page of my React application.</p>
+        <h1>AUTO GARAGE</h1>
+        <p>Еverything for your car</p>
         <div className='header-search'>
           <input 
           className='search-field'
@@ -41,6 +41,22 @@ function HomePage() {
       <div className="ad-box right-ad">
       <img className='right-img' src={images[currentImageIndex]} alt="porsche" />
         {/* Right Ad Content */}
+      </div>
+      <div className='footer'>
+        <div className='footer_social'>
+          <div className='footer_social-text'>
+            <div className='header-social'>
+              Finding parts has never been so easy
+            </div>
+            <div className='text'>some text!!!</div>
+          </div>
+          <div className='footer_social-block'>
+            <div className='social-image'>some text!!!
+            
+            </div>
+            <span></span>
+          </div>
+        </div>
       </div>
     </div>
   );
