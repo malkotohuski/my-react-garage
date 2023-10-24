@@ -1,11 +1,22 @@
-
 import React from 'react';
-
+import './WinterTires.css'
 
 function WinterTiresPage() {
   return (
-    <div>
-    <h1>Welcome to My React App</h1>
+    <div className='left_block'>
+    <h2>
+      Tires
+    </h2>
+    <div className='selects'>
+      <div className='row'>
+        <label className='label_info'>Season</label>
+        <div className='select-outer'>
+          <section>
+
+          </section>
+        </div>
+      </div>
+    </div>
     <p>WinterTiresPage</p>
   </div>
   );
