@@ -26,6 +26,26 @@ const menuItems = [
     label: 'Suspension',
   },
   {
+    image: 'https://autotrends.org/wp-content/uploads/motor-oil-weights.jpg',
+    label: 'Motor Oil',
+  },
+  {
+    image: 'https://c8.alamy.com/comp/2BB3X6C/braking-system-car-brake-disks-with-different-perforations-and-calipers-isolated-on-white-background-3d-illustration-2BB3X6C.jpg',
+    label: 'Braking System',
+  },
+  {
+    image: 'https://carauto.bg/ckfinder/userfiles/images/3.jpg',
+    label: 'Ignition And Heating Systems',
+  },
+  {
+    image: 'https://www.avtotachki.com/wp-content/uploads/2021/01/konstrukcija-kuzova-avtomobilya.jpg',
+    label: 'Car body',
+  },
+  {
+    image: 'https://maslata.bg/wp-content/uploads/2015/03/1.jpg',
+    label: 'Filter',
+  },
+  {
     image: 'https://i.gaw.to/content/photos/26/98/269855_La_petite_histoire_de_la_direction_assistee.jpg?1024x640',
     label: 'Steering Suspension',
   },
@@ -44,6 +64,12 @@ function HomePage() {
     };
   }, []);
 
+  const rows = [];
+  for (let i = 0; i < menuItems.length; i += 2) {
+    const rowItems = menuItems.slice(i, i + 2);
+    rows.push(rowItems);
+  }
+
   return (
     <div className="homepage">
     <div className="ad-box left-ad">
@@ -51,12 +77,18 @@ function HomePage() {
     </div>
     <div className="content">
       <div className="menu-images">
-        {menuItems.map((item, index) => (
-          <div key={index} className="menu-item">
-            <Link to={item.label.toLowerCase() === 'tires' ? '/tires' : `/${item.label.toLowerCase()}`}>
-              <img src={item.image} alt={`Menu Img ${index}`} className="menu-image" />
-            </Link>
-            <button className="menu-button">{item.label}</button>
+        {rows.map((row, rowIndex) => (
+          <div key={rowIndex} className="menu-row">
+            {row.map((item, index) => (
+              <div key={index} className="menu-item">
+                <Link to={item.label.toLowerCase() === 'tires' ? '/tires' : `/${item.label.toLowerCase()}`}>
+                  <div className="menu-image-container">
+                    <img src={item.image} alt={`Menu Img ${index}`} className="menu-image" />
+                  </div>
+                </Link>
+                <div className="menu-label">{item.label}</div>
+              </div>
+            ))}
           </div>
         ))}
       </div>
