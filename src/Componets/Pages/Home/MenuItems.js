@@ -25,7 +25,7 @@ const menuItems = [
     },
     {
       image: 'https://carauto.bg/ckfinder/userfiles/images/3.jpg',
-      label: 'Ignition And Heating Systems',
+      label: 'Ignition Systems',
     },
     {
       image: 'https://www.avtotachki.com/wp-content/uploads/2021/01/konstrukcija-kuzova-avtomobilya.jpg',
