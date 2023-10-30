@@ -81,7 +81,7 @@
 }
 
 .menu-images {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px; /* Adjust the gap as needed */
 }
