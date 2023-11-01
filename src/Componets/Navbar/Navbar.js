@@ -52,7 +52,7 @@ function TireSections() {
     <div className="tire-sections">
       <ul >
       <li className="tire-section">
-          <Link to="tires/wintertires" className="dropdown-link">Winters Tires</Link>
+          <Link to="tires/wintertires" className="dropdown-link">Winter Tires</Link>
         </li>
         <li className="tire-section">
           <Link to="/" className="dropdown-link">Summer Tires</Link>
